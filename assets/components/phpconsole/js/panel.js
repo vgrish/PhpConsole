@@ -484,7 +484,7 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                 log: '',
                 stop: '',
             }, tab.fp.getForm().getValues()),
-            maskEl: content.getEl(),
+            maskEl: content.itemCt,
             listeners: {
                 beforerequest: {
                     fn: function () {
