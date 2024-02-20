@@ -1,0 +1,4 @@
+.idea
+tmp
+/_build/resolvers/_symlinks.php
+/core/components/phpconsole/vendor/

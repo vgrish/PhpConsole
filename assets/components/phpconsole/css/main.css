@@ -1,0 +1,169 @@
+.phpconsole-page-header {
+    order: 1;
+    font: normal 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #53595F;
+    margin: 0;
+    padding: 10px 15px;
+}
+.phpconsole-page-header, .phpconsole-page-header div {
+    background-color: transparent !important;
+}
+
+#modx-action-buttons {
+    padding: 0.5rem 1rem 0 0;
+}
+
+#phpconsole-panel-console .x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+    right: 2px;
+    background-image: none;
+}
+
+#phpconsole-panel-console .x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:before {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 900;
+    content: "\f00d";
+    position: absolute;
+    top: -10px;
+    height: 20px;
+}
+
+.x-menu-list li a.modx-tab-close.x-menu-item {
+    padding: 3px 10px 3px 10px;
+}
+
+#phpconsole-panel-console .phpconsole-console-bbar label {
+    margin: 0;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+#phpconsole-panel-console .phpconsole-console-bbar .right-column {
+    float: right;
+}
+
+#phpconsole-panel-console .phpconsole-console-bbar .left-column {
+    float: left;
+}
+
+#phpconsole-panel-console .x-tab-panel-body .x-panel.dz-drag-hover .phpconsole-tab-content {
+    background: aliceblue;
+}
+
+.x-window-phpconsole .ext-mb-content {
+    display: block;
+    margin-left: 0 !important;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.phpconsole-output-vtab.vertical-tabs-panel .x-tab-panel-bwrap .vertical-tabs-body {
+    border: 0;
+    padding: 5px 1px 0px 0px;
+    overflow: hidden!important;
+}
+.phpconsole-output-vtab.vertical-tabs-panel .vertical-tabs-header .x-tab-strip-wrap ul.x-tab-strip {
+    background-color: #FFF !important;
+}
+
+.phpconsole-output-vtab.vertical-tabs-panel .vertical-tabs-header .x-tab-strip-wrap ul.x-tab-strip > li {
+    border-right: none;
+    color: #515151;
+    float: none;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    _padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px 10px;
+    border-bottom-style: dashed;
+}
+.phpconsole-output-vtab.vertical-tabs-panel .vertical-tabs-header {
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+    width: 33px !important;
+
+    display: none;
+}
+.phpconsole-output-vtab.vertical-tabs-panel .vertical-tabs-header .x-tab-strip-wrap ul.x-tab-strip > li.x-tab-strip-active {
+    background: #FFF;
+    border-color: #234368;
+    border-right-color: #FFF;
+    box-shadow: none;
+    color: #6CB24A;
+    width: 33px;
+}
+
+
+.phpconsole-console-bbar .x-btn {
+    padding: 9px 13px 9px 13px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+.phpconsole-console-bbar .x-form-text {
+    padding: 3px 8px 3px;
+}
+
+
+@media screen and (max-width: 960px) {
+    #modx-content > .x-panel-bwrap > .x-panel-body .phpconsole-page-header {
+        margin-top: 0rem;
+    }
+    #modx-content > .x-panel-bwrap > .x-panel-body .phpconsole-page-header + div {
+        margin: 0 .5rem 0 .5rem;
+    }
+
+    .phpconsole-console-bbar {
+        height: 50px;
+        width: 100%!important;
+    }
+    .phpconsole-console-bbar .x-btn {
+        margin-right: 5px;
+    }
+    .phpconsole-console-bbar .x-column {
+        width: inherit !important;
+        margin-right: 10px !important;
+        height: fit-content;
+    }
+    .phpconsole-console-bbar .separator-column {
+        margin: 0!important;
+        width: 20px!important;
+    }
+    .phpconsole-console-bbar .x-column-inner {
+        width: 100%!important;
+        display: -webkit-inline-box;
+    }
+    .phpconsole-console-bbar .button-column {
+        max-width:10rem!important;
+    }
+    .phpconsole-console-bbar .left-column, .phpconsole-console-bbar .right-column {
+        max-width:100px!important;
+    }
+
+    #modx-content .phpconsole-console-bbar .x-panel-body {
+        height: auto !important;
+        max-height: 100% !important;
+        width: inherit!important;
+        max-width: inherit !important;
+    }
+
+    #modx-action-buttons table table:not(#modx-tree-panel-usergroup table, #modx-grid-lexicon table, #modx-panel-property-sets) tbody tr td {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (min-width: 961px) {
+    #modx-content > .x-panel-bwrap > .x-panel-body > #phpconsole-panel-console.x-panel {
+        margin: 10px 10px 0px 15px;
+    }
+}
+
+
+

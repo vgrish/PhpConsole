@@ -1,0 +1,24 @@
+{
+  "name": "vgrish/phpconsole",
+  "description": "",
+  "authors": [
+    {
+      "name": "Vgrish",
+      "email": "vgrish@gmail.com"
+    }
+  ],
+  "license": "proprietary",
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpConsole\\": "src/"
+    }
+  }
+}

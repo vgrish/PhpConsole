@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="PhpConsole\Model" baseClass="xPDO\Om\xPDOObject" platform="mysql" defaultEngine="InnoDB" version="3.0">
+
+    <object class="Code" table="phpconsole_code" extends="xPDO\Om\xPDOObject">
+        <field key="code_id" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false"
+               default="0" index="pk"/>
+        <field key="user_id" dbtype="int" precision="20" phptype="integer" null="false" attributes="unsigned" default="0" index="pk"/>
+
+        <field key="createdon" dbtype="timestamp" phptype="datetime" null="true" default="CURRENT_TIMESTAMP"/>
+        <field key="updatedon" dbtype="timestamp" phptype="datetime" null="true" default="CURRENT_TIMESTAMP"/>
+
+        <field key="content" dbtype="mediumtext" phptype="string"/>
+
+        <index alias="PRIMARY" name="PRIMARY" primary="true" unique="true">
+            <column key="code_id" collation="A" null="false" />
+            <column key="user_id" collation="A" null="false" />
+        </index>
+
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false" />
+        </index>
+
+    </object>
+
+</model>

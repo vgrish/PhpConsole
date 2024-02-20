@@ -1,0 +1,22 @@
+.x-tab-panel-body {
+    background-color: inherit;
+}
+.x-dd-drag-ghost{
+    color:white;
+    background-color:inherit;
+}
+.dd-arrow-down.dd-arrow-down-invisible {
+    display: none;
+    visibility: hidden;
+}
+.dd-arrow-down {
+    background-image: url(images/drop-down-16.png);
+    display: block;
+    visibility: visible;
+    z-index: 20000;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+}
