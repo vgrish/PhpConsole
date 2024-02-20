@@ -1,6 +1,6 @@
 # PhpConsole
 
-### PhpConsole MODx Revolution 3. 
+### PhpConsole for MODx Revolution 3. 
 ### Author: Vgrish <vgrish@gmail.com>
 ### [The author of the idea is Nikolai Lanets @Fi1osof](https://github.com/MODX-Club/modx-console)
 
