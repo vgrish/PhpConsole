@@ -379,6 +379,7 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                         items: [{
                             xtype: 'textarea',
                             name: 'result',
+                            cls: 'phpconsole-result',
                             hideLabel: true,
                             height: '100%',
                             grow: false,
@@ -389,6 +390,7 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                         items: [{
                             xtype: 'textarea',
                             name: 'log',
+                            cls: 'phpconsole-log',
                             hideLabel: true,
                             height: '100%',
                             grow: false,

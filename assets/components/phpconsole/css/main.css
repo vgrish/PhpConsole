@@ -110,6 +110,18 @@
     padding: 3px 8px 3px;
 }
 
+.phpconsole-output-vtab .phpconsole-result {
+    border-left: 0.2rem solid #6CB24A;
+}
+.phpconsole-output-vtab .phpconsole-log {
+    border-left: 0.2rem solid #E4E4E4;
+}
+#phpconsole-panel-console .phpconsole-tab-content {
+    border-left-width: 0.2rem;
+}
+#phpconsole-panel-console .x-form-text, #phpconsole-panel-console textarea.x-form-field, #phpconsole-panel-console .x-form-textarea {
+    border-radius: 0;
+}
 
 @media screen and (max-width: 960px) {
     #modx-content > .x-panel-bwrap > .x-panel-body .phpconsole-page-header {
