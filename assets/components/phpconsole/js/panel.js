@@ -205,7 +205,7 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                     cls: 'phpconsole-console-bbar',
                     border: false,
                     items: [{
-                        columnWidth: .15,
+                        columnWidth: .2,
                         border: false,
                         layout: 'form',
                         cls: 'button-column',
