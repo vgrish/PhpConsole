@@ -519,6 +519,10 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                                 }).bind(this).defer(phpconsole.Ajax.latency || 0);
                             }
                         }
+
+                        if (r.message) {
+                            phpconsole.Msg.alert(_('error'), r.message);
+                        }
                     },
                     scope: this
                 },
@@ -526,6 +530,19 @@ Ext.extend(phpconsole.panel.Console, MODx.Panel, {
                     fn: function (r) {
                         tab.execRequestId = null;
                         this.toggleTabExecBtn(tab);
+
+                        if (r.data) {
+                            r.data['total_idx'] = tab.execRequestIdx;
+
+                            tab.fp.getForm().setValues(r.data);
+                            tab.fp.fireEvent("change", tab.fp);
+
+                            if (r.data.reexecute === true) {
+                                (function () {
+                                    this.codeExec(null, null, true);
+                                }).bind(this).defer(phpconsole.Ajax.latency || 0);
+                            }
+                        }
 
                         if (r.message) {
                             phpconsole.Msg.alert(_('error'), r.message);
